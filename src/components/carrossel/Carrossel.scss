@@ -1,0 +1,55 @@
+.container-carrossel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 5rem;
+
+  p {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .carrossel-images {
+    display: flex;
+    animation: scroll 21s linear infinite;
+    margin-bottom: 2rem;
+  }
+
+  img {
+    width: calc(100% / 4);
+    margin-left: 1rem;
+    border: 2px solid black;
+  }
+}
+
+// Definindo a animação
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .container-carrossel {
+    .carrossel-images {
+      img {
+        width: calc(100% / 3);
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container-carrossel {
+    .carrossel-images {
+      img {
+        width: calc(100% / 2);
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import "./Header.scss";
 
 import { BiSearch } from "react-icons/bi";
+import { BiMenu } from "react-icons/bi";
 
 export default function Header() {
   return (
@@ -8,7 +9,7 @@ export default function Header() {
       <nav>
         <h1>LIONSGATE</h1>
         <ul>
-          <li>
+          <li className="best-movie-link">
             <a href="">Best Movies</a>
           </li>
           <li className="list-salved">
@@ -17,7 +18,7 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <div>
+      <div className="menu-desktop">
         <span className="span-search">
           <input
             type="text"
@@ -35,6 +36,9 @@ export default function Header() {
             value="Login / Logout"
           />
         </span>
+      </div>
+      <div className="container-mobile">
+        <BiMenu className="icon-mobile" />
       </div>
     </header>
   );

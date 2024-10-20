@@ -1,6 +1,57 @@
-
 .container-best-movies {
-    background-color: black;
-    color: white;
-    padding: 1.5rem;
+  padding: 1.5rem 2.5rem;
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  article {
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      li {
+        margin: 1rem;
+
+        p {
+          border-left: 2px solid black;
+          padding-left: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        img {
+          width: 230px;
+          border: 2px solid black;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .container-best-movies {
+    padding: 1rem;
+  }
+}
+
+@media (max-width:564px) {
+  .container-best-movies {
+    article {
+      ul {
+        li {
+          margin: 0 auto 1rem;
+          text-align: center;
+          
+          p {
+            text-align: start;
+          }
+
+          img {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
 }

@@ -33,14 +33,14 @@
       .list-salved {
         display: flex;
 
-         p {
+        p {
           margin-left: 0.5rem;
-         }
+        }
       }
     }
   }
 
-  div {
+  .menu-desktop {
     .span-search {
       input {
         padding: 0.5rem 2rem 0.5rem 1rem;
@@ -85,6 +85,31 @@
       color: silver;
       top: 10px;
       right: 2rem;
+    }
+  }
+
+  //menu mobile
+  .container-mobile {
+    font-size: 40px;
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .container-header {
+    .menu-desktop {
+      display: none;
+    }
+    .container-mobile {
+      display: block;
+    }
+  }
+}
+
+@media (max-width:600px) {
+  .container-header {
+    .best-movie-link {
+      display: none;
     }
   }
 }

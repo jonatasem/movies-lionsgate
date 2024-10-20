@@ -1,7 +1,6 @@
 import "./About.scss";
-import MovieAbout from "../components/movie-about/MovieAbout";
-
 import Header from "../components/header/Header";
+import Carrossel from "../components/carrossel/Carrossel";
 
 export default function About() {
   return (
@@ -18,7 +17,7 @@ export default function About() {
           eveniet qui, sunt.
         </p>
       </article>
-      <MovieAbout />
+      <Carrossel />
     </section>
   );
 }
