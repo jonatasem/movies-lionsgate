@@ -40,6 +40,14 @@ const ApiMovies = [
       "Wade Wilson é um militar que se submete a uma experiência para tentar se salvar do câncer e acaba ganhando super-habilidades, mas quase morre no processo também.",
     year: 2016,
     img: imgDeadPool,
+  },
+  {
+    id: 3,
+    name: "Dead Pool",
+    description:
+      "Wade Wilson é um militar que se submete a uma experiência para tentar se salvar do câncer e acaba ganhando super-habilidades, mas quase morre no processo também.",
+    year: 2016,
+    img: imgDeadPool,
   }
 ];
 
